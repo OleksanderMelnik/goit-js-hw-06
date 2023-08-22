@@ -13,8 +13,6 @@ const vegetableEl = ingredients.map((ingredient) => {
   itemEl.classList = 'ingredient';
   itemEl.textContent = ingredient;
 
-  console.log(itemEl);
-
   return itemEl
 });
 containerEl.append(...vegetableEl);
