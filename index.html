@@ -60,9 +60,34 @@
         placeholder="Please enter 6 symbols"
       />
       <li><a href="task-07.html">Task 7</a></li>
+      <input id="font-size-control" type="range" min="16" max="96" />
+      <br />
+      <span id="text">Abracadabra!</span>
       <li><a href="task-08.html">Task 8</a></li>
+      <form class="login-form">
+        <label>
+          Email
+          <input type="email" name="email" />
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" />
+        </label>
+        <button type="submit">Login</button>
+      </form>
       <li><a href="task-09.html">Task 9</a></li>
+      <div class="widget">
+        <p>Background color: <span class="color">-</span></p>
+        <button type="button" class="change-color">Change color</button>
+      </div>
       <li><a href="task-10.html">Task 10 (optional)</a></li>
+      <div id="controls">
+        <input type="number" min="1" max="100" step="1" />
+        <button type="button" data-create>Create</button>
+        <button type="button" data-destroy>Destroy</button>
+      </div>
+      
+      <div id="boxes"></div>
     </ul>
     <script src="./js/task-01.js" type="module"></script>
     <script src="./js/task-02.js" type="module"></script>
@@ -70,5 +95,9 @@
     <script src="./js/task-04.js" type="module"></script>
     <script src="./js/task-05.js" type="module"></script>
     <script src="./js/task-06.js" type="module"></script>
+    <script src="./js/task-07.js" type="module"></script>
+    <script src="./js/task-08.js" type="module"></script>
+    <script src="./js/task-09.js" type="module"></script>
+    <script src="./js/task-10.js" type="module"></script>
   </body>
 </html>

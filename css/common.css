@@ -26,6 +26,7 @@ button {
 .gallery {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .item-img {

@@ -5,7 +5,7 @@ textInput.addEventListener('input', (event) => {
     
     textInput.addEventListener("blur", () => {
         
-        inputText === Number(textInput.dataset.length) ? textInput.id = 'validation-input-valid' : textInput.id = 'validation-input-invalid';
+    inputText === Number(textInput.dataset.length) ? textInput.id = 'validation-input-valid' : textInput.id = 'validation-input-invalid';
     
     });
 
