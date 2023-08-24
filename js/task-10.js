@@ -35,7 +35,9 @@ function destroyBoxes() {
 };
 
 createBoxesEl.addEventListener('click', () => {
+  destroyBoxes();
   createBoxes(inputEl.value);
+
 });
 
 destroyBoxesEl.addEventListener('click', () => {

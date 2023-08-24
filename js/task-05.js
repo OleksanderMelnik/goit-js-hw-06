@@ -5,6 +5,6 @@ textInput.addEventListener('input', (event) => {
     
   const inputTextSpan = event.currentTarget.value;
     
-  textSpan.textContent = inputTextSpan === '' ? 'Anonymous' : inputTextSpan;
+  textSpan.textContent = inputTextSpan.trim() === '' ? 'Anonymous' : inputTextSpan;
 
   });

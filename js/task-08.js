@@ -5,15 +5,19 @@ registerForm.addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
 
   event.preventDefault();
-  
-  const form = event.currentTarget;
-  const email = form.elements.email.value;
-  const password = form.elements.password.value;
-  
-  if (email === "" || password === "") {
-    return console.log("Please fill in all the fields!");
-  }
+  const formData = {}; 
 
-  console.log(`Email: ${email}, Password: ${password}`);
-  form.reset();
+  for (const element of registerForm.elements) {
+    if (element.name) {
+      formData[element.name] = element.value;
+    };
+  };
+
+    if (formData.email && formData.password) {
+      console.log(formData);
+      registerForm.reset();
+    } else {
+      alert ("Please fill in all the fields!");
+    };
+
 }
